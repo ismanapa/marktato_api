@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-const helloworldController = require('./app/controllers/helloworldController');
+const helloworldController = require('./app/controllers/helloWorldController');
 
 app.use('/api/helloworld', helloworldController);
 

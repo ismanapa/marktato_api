@@ -1,0 +1,23 @@
+{
+  "name": "marktato_api",
+  "version": "1.0.0",
+  "description": "Marktato api",
+  "main": "node ./server.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ismael Navarro (ismanapa@gmail.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.24.1",
+    "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}

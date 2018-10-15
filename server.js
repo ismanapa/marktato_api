@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const graphqlServer = require('./app/infraestructure/graphql');
 
 const app = express();
 
@@ -9,6 +10,8 @@ app.use('/api/helloworld', helloworldController);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+graphqlServer.applyMiddleware({ app });
 
 app.listen(process.env.PORT || 3000, () => {
   console.log('Server is running', process.env.PORT || 3000);

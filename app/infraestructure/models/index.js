@@ -1,5 +1,5 @@
-const bookmark = require('./bookmark');
+const Bookmark = require('./bookmark');
 
 module.exports = {
-  bookmark,
+  Bookmark,
 };

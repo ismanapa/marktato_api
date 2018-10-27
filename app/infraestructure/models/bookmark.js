@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
-const timestamps = require('mongoose-timestamps');
+const timestamps = require('mongoose-timestamp');
 
 const BookmarkSchema = new mongoose.Schema({
   name: String,
   description: String,
-  Usages: Number,
-  LastUsage: Date,
-  Url: String,
+  usages: Number,
+  lastUsage: Date,
+  url: String,
 });
 
 BookmarkSchema.plugin(timestamps);

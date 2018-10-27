@@ -1,7 +1,7 @@
-const { bookmark } = require('../../models');
+const { Bookmark } = require('../../models');
 
 const getBookmarks = async () => {
-  const bookmarks = await bookmark.find();
+  const bookmarks = await Bookmark.find();
   return bookmarks;
 };
 

@@ -6,6 +6,9 @@ module.exports = {
           type ${typeName} {
               name: String,
               description: String,
+              usages: Int,
+              lasUsage: Date,
+              url: String
           }
       `,
 };

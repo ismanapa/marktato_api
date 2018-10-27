@@ -1,6 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const graphqlServer = require('./app/infraestructure/graphql');
+const Connection = require('./app/infraestructure/dataContext/connection');
+
+const dbConn = new Connection(process.env.mongodb);
+dbConn.connect();
 
 const app = express();
 

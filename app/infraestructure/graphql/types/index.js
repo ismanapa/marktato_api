@@ -1,17 +1,12 @@
 const { gql } = require('apollo-server-express');
 
-const bookType = require('./bookType');
-const editorialType = require('./editorialType');
+const bookmarkType = require('./bookmarkType');
 
 const typeDefs = gql`
-    ${bookType.definition}
-    ${editorialType.definition}
+    ${bookmarkType.definition}
 
     type Query {
-        books (
-            first: Int
-        ): [${bookType.name}]
-        editorials: [${editorialType.name}]
+        bookmarks: [${bookmarkType.name}]
     }
 `;
 

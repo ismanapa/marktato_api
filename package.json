@@ -24,6 +24,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "graphql": "^14.0.2",
-    "mongoose": "^5.3.7"
+    "mongoose": "^5.3.7",
+    "mongoose-timestamp": "^0.6.0"
   }
 }

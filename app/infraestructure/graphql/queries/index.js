@@ -1,16 +1,7 @@
-const { getBooks } = require('./booksQueries');
-const { getEditorial } = require('./editorialQueries');
+const { getBookmarks } = require('./bookmarksQueries');
 
 module.exports = {
   Query: {
-    books: getBooks,
-    editorials: getEditorial,
-  },
-  Book: {
-    editorial: () => {
-      return {
-        name: 'editorial',
-      };
-    },
+    bookmarkts: getBookmarks,
   },
 };

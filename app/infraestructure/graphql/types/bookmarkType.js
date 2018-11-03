@@ -4,6 +4,7 @@ module.exports = {
   name: typeName,
   definition: `
           type ${typeName} {
+              id: ID,
               name: String,
               description: String,
               usages: Int,

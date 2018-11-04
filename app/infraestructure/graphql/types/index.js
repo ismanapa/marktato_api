@@ -8,7 +8,9 @@ const typeDefs = gql`
     scalar Date
 
     type Query {
-        bookmarks: [${bookmarkType.name}]
+        bookmarks(
+            name: String
+        ): [${bookmarkType.name}]
     }
 
     type Mutation {
